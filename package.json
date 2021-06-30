@@ -116,7 +116,7 @@
     "standard-version": "9.3.0",
     "start-server-and-test": "^1.10.6",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
+    "stylus-loader": "^4.3.3",
     "validate-element-name": "^2.1.1",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.1",
