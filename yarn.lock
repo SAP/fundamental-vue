@@ -4284,9 +4284,9 @@
   integrity sha512-Xn/+vdm9CjuC9p3Ae+lTClNutrVhsXpzxvoTXXtoys6kVRX9FkueSUAqSWAyZntmVLlR4DosBV4pH8y5Z/HbUw==
 
 "@vuese/markdown-render@^2.5.3":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@vuese/markdown-render/-/markdown-render-2.11.0.tgz#9eabf8b70d5ee156998ce543171e5be927738d50"
-  integrity sha512-rA8NAvopMj+zEAHiWWS4n426KnXInLf8J2Mmnzk4bbHK+5pdVDWS/NxPve718wgeeSAaZlGnPdsUThvD92F3aA==
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@vuese/markdown-render/-/markdown-render-2.11.3.tgz#4488ce4499f56ecae92e49592878a7419e06619b"
+  integrity sha512-LG5wIMdkzbbhsHNhtsBGMob/gIbTdpTRDV2GdXgACe7gpEugRdvfbBBt0o1B0AOHIQtJ0W2q01s/u5ujkHdd9w==
 
 "@vuese/parser@^2.4.3":
   version "2.10.0"
