@@ -14,7 +14,7 @@ describe('fd-calendar', () => {
         defaultValue: new Date('2019-05-31')
       }
     })
-    const header = wrapper.find(FdCalendarHeader)
+    const header = wrapper.findComponent(FdCalendarHeader)
     expect(header.exists()).toBe(true)
     expect(header.props('year')).toEqual(2019)
     expect(header.props('month')).toEqual('May')

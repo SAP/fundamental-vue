@@ -43,7 +43,7 @@ describe('Combobox', () => {
       }
     })
     await wrapper.vm.$nextTick()
-    const item = wrapper.find({ ref: 'menuItem1' })
+    const item = wrapper.findComponent({ ref: 'menuItem1' })
     item.find('a').trigger('click')
     expect(item.text()).toBe('1') // ensure that we have selected the correct item
     expect(wrapper.vm.value).toBe('1')

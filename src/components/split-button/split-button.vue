@@ -18,7 +18,7 @@
 import FdSplitButtonAuxiliary from './../split-button-auxiliary/split-button-auxiliary.vue'
 import FdSplitButtonAction from './../split-button-action/split-button-action.vue'
 import Vue from 'vue'
-import ButtonTypes from './../button/button-types'
+import ButtonStyles from './../button/styles'
 import IconMixin from './../../mixins/icon'
 
 export default {
@@ -43,25 +43,17 @@ export default {
     styling: {
       type: String,
       default: null,
-      validator: value => ['emphasized', 'light'].indexOf(value) >= 0
+      validator: value => ButtonStyles.indexOf(value) >= 0
     },
     state: {
       type: String,
       default: 'normal',
       validator: value => ['normal', 'selected', 'disabled'].indexOf(value) >= 0
-    },
-    type: {
-      type: String,
-      default: null,
-      validator: value => ButtonTypes.indexOf(value) >= 0
     }
   },
   watch: {
     state(state) {
       this.splitButton.state = state
-    },
-    type(type) {
-      this.splitButton.type = type
     },
     styling(styling) {
       this.splitButton.styling = styling
@@ -77,7 +69,6 @@ export default {
     return {
       splitButton: Vue.observable({
         state: this.state,
-        type: this.type,
         styling: this.styling,
         compact: this.compact,
         icon: this.icon

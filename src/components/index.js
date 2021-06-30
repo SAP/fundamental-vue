@@ -1,6 +1,5 @@
 import $Support from './$Support'
 import ActionBar from './action-bar'
-import Alert from './alert'
 import Badge from './badge'
 import Breadcrumb from './breadcrumb'
 import Button from './button'
@@ -90,7 +89,6 @@ const plugin = {
     const plugins = [
       $Support,
       ActionBar,
-      Alert,
       Badge,
       Breadcrumb,
       Button,

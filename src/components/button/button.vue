@@ -1,12 +1,13 @@
 <template>
   <button :class="classes" :disabled="disabled" v-on="listeners" @click="click">
     <!-- button content -->
+    <i v-if="icon != null" :class="iconClasses" />
     <slot />
   </button>
 </template>
 
 <script>
-import ButtonTypes from './button-types'
+import ButtonStyles from './styles'
 import Icon from './../../mixins/icon'
 import Uid from './../../mixins/uid'
 
@@ -21,15 +22,7 @@ export default {
       // `emphasized` / `light`
       type: String,
       default: null,
-      validator: value => ['emphasized', 'light'].indexOf(value) >= 0
-    },
-    // Type of the button
-    type: {
-      // `standard` / `positive` / `medium` / `negative`
-      type: String,
-      // `null` by default – renders a default button with no special meaning/semantics.
-      default: null,
-      validator: value => ButtonTypes.indexOf(value) >= 0
+      validator: value => ButtonStyles.indexOf(value) >= 0
     },
     // State of the button – usually not of really useful but used in combination with `fd-button-group`.
     state: {
@@ -62,12 +55,10 @@ export default {
     },
     classes() {
       return [
-        this.styling ? '' : 'fd-button',
+        'fd-button',
         this.compact ? 'fd-button--compact' : '',
         this.styling ? `fd-button--${this.styling}` : '',
-        this.type ? `fd-button--${this.type}` : '',
-        this.state !== 'normal' ? `is-${this.state}` : '',
-        ...this.iconClasses
+        this.state !== 'normal' ? `is-${this.state}` : ''
       ]
     }
   }

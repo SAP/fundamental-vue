@@ -2,22 +2,17 @@
 
 exports[`ActionBar renders back-button-slot 1`] = `
 <div
-  class="fd-action-bar"
+  class="fd-action-bar__header"
 >
-  <div
-    class="fd-action-bar__back"
+  <button
+    class="fd-button"
   >
-    <button
-      class="fd-button--light sap-icon--nav-back"
+    <i
+      class="sap-icon--nav-back"
     />
-  </div>
-   
-  <div
-    class="fd-action-bar__header"
-  >
      
-  </div>
-   
+  </button>
+    
 </div>
 `;
 
@@ -26,64 +21,67 @@ exports[`ActionBar renders correctly in it's full glory 1`] = `
   class="fd-action-bar"
 >
   <div
-    class="fd-action-bar__back"
-  >
-    <button
-      class="fd-button--light sap-icon--nav-back"
-    />
-  </div>
-   
-  <div
     class="fd-action-bar__header"
   >
-    <h3
+    <div
+      class="fd-action-bar__back"
+    >
+      <button
+        class="fd-button fd-button--transparent"
+      >
+        <i
+          class="sap-icon--nav-back"
+        />
+         
+      </button>
+    </div>
+     
+    <div
       class="fd-action-bar__title"
     >
       Action Bar Title
-    </h3>
+    </div>
      
-    <p
-      class="fd-action-bar__description"
+    <div
+      class="fd-action-bar__actions"
     >
-      Action Bar Description
-    </p>
+      <button
+        class="fd-button fd-button--positive"
+      >
+        <i
+          class="sap-icon--accept"
+        />
+         Approve
+      </button>
+       
+      <button
+        class="fd-button fd-button--negative"
+      >
+        <i
+          class="sap-icon--decline"
+        />
+         Reject
+      </button>
+    </div>
   </div>
    
-  <div
-    class="fd-action-bar__actions"
+  <p
+    class="fd-action-bar__description fd-action-bar__description--back"
   >
-    <button
-      class="fd-button fd-button--positive sap-icon--accept"
-    >
-      Approve
-    </button>
-     
-    <button
-      class="fd-button fd-button--negative sap-icon--decline"
-    >
-      Reject
-    </button>
-  </div>
+    Action Bar Description
+  </p>
 </div>
 `;
 
 exports[`ActionBar renders header-title-slot 1`] = `
 <div
-  class="fd-action-bar"
+  class="fd-action-bar__header"
 >
-  <div
-    class="fd-action-bar__back"
-  />
    
   <div
-    class="fd-action-bar__header"
+    class="fd-action-bar__title"
   >
-    <h3
-      class="fd-action-bar__title"
-    >
-      Action Bar Title
-    </h3>
-     
+    Action Bar Title
   </div>
    
 </div>

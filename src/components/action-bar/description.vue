@@ -11,7 +11,7 @@ export default {
     }
   },
   render(h) {
-    const data = { class: 'fd-action-bar__description' }
+    const data = { class: 'fd-action-bar__description fd-action-bar__description--back' }
     return h(this.tag, data, this.$slots.default)
   }
 }

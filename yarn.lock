@@ -2580,11 +2580,6 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@sap-theming/theming-base-content@~11.1.17":
-  version "11.1.22"
-  resolved "https://registry.yarnpkg.com/@sap-theming/theming-base-content/-/theming-base-content-11.1.22.tgz#ac75089e02d7c4c1447c32002e5ab3fc734bf61e"
-  integrity sha512-69b6GbcFuL4FbkzBXF4RS2/8Gq3WoPCVu+2PZnWpqABksdxLM0l1h+MDEFyANouVjUkTJDTy1bS5NB25dUXzjA==
-
 "@soda/friendly-errors-webpack-plugin@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@soda/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.7.1.tgz#706f64bcb4a8b9642b48ae3ace444c70334d615d"
@@ -9615,12 +9610,10 @@ functions-have-names@^1.2.0:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.1.tgz#a981ac397fa0c9964551402cdc5533d7a4d52f91"
   integrity sha512-j48B/ZI7VKs3sgeI2cZp7WXWmZXu7Iq5pl5/vptV5N2mq+DGFuS/ulaDjtaoLpYzuD6u8UgrUKHfgo7fDTSiBA==
 
-fundamental-styles@0.7.0-rc.2:
-  version "0.7.0-rc.2"
-  resolved "https://registry.yarnpkg.com/fundamental-styles/-/fundamental-styles-0.7.0-rc.2.tgz#8c27e776f39bb2292f4dacc73327251f10bc9828"
-  integrity sha512-Sq8klWKKLyIiUy6UsxNbmpGR58ElUHEdra23WrxfZ7CdPuoaO0cgDXyTbUH2MaLzdsG7aATvQgai1+maPzRdMg==
-  dependencies:
-    "@sap-theming/theming-base-content" "~11.1.17"
+fundamental-styles@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/fundamental-styles/-/fundamental-styles-0.12.0.tgz#7baa0bed71ca3a57cead7bc1cbcf8c7c2bb28877"
+  integrity sha512-ZuQlVdRJQjtlvhGrj80VvGtdydoCzzspOamgFSJH4wzYVIXDNcYuDHE6nRm0Ad01ttjp9NuyZDKcwIvi+rSVNw==
 
 fuse.js@^3.6.1:
   version "3.6.1"

@@ -23,7 +23,7 @@ describe('Split Button', () => {
 
   test('emits click-event when action-button is clicked', () => {
     const wrapper = createSplitButton()
-    const actionButtonWrapper = wrapper.find(FdSplitButtonAction)
+    const actionButtonWrapper = wrapper.findComponent(FdSplitButtonAction)
     expect(actionButtonWrapper.exists()).toBe(true)
     actionButtonWrapper.trigger('click')
     expect(wrapper.emitted('click')).toHaveLength(1)
@@ -31,7 +31,7 @@ describe('Split Button', () => {
 
   test('emits click:auxiliary-event when auxiliary-button is clicked', () => {
     const wrapper = createSplitButton()
-    const auxiliaryButtonWrapper = wrapper.find(FdSplitButtonAuxiliary)
+    const auxiliaryButtonWrapper = wrapper.findComponent(FdSplitButtonAuxiliary)
     expect(auxiliaryButtonWrapper.exists()).toBe(true)
     auxiliaryButtonWrapper.trigger('click')
     expect(wrapper.emitted('click:auxiliary')).toHaveLength(1)
@@ -54,7 +54,7 @@ describe('Split Button', () => {
     })
 
     test('click:auxiliary-event is not emitted when auxiliary-button is clicked', () => {
-      const auxiliaryButtonWrapper = disabledWrapper.find(FdSplitButtonAuxiliary)
+      const auxiliaryButtonWrapper = disabledWrapper.findComponent(FdSplitButtonAuxiliary)
       expect(auxiliaryButtonWrapper.exists()).toBe(true)
       auxiliaryButtonWrapper.trigger('click')
       expect(disabledWrapper.emitted('click:auxiliary')).toBeUndefined()
@@ -62,7 +62,7 @@ describe('Split Button', () => {
     })
 
     test('click-event is not emitted when action-button is clicked', () => {
-      const actionButtonWrapper = disabledWrapper.find(FdSplitButtonAction)
+      const actionButtonWrapper = disabledWrapper.findComponent(FdSplitButtonAction)
       expect(actionButtonWrapper.exists()).toBe(true)
       actionButtonWrapper.trigger('click')
       expect(disabledWrapper.emitted('click:auxiliary')).toBeUndefined()

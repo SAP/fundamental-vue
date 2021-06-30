@@ -14,7 +14,7 @@ describe('Radiobutton', () => {
       components: { FdRadio }
     })
     expect(wrapper.vm.checked).toBe('')
-    const radio = wrapper.find(FdRadio)
+    const radio = wrapper.findComponent(FdRadio)
     expect(radio.isVisible()).toBe(true)
     radio.trigger('click')
     await localVue.nextTick()

@@ -8,9 +8,9 @@ export default {
     const data = {
       ...context.data,
       props: {
-        styling: 'light'
+        styling: 'transparent'
       },
-      class: 'fd-input-group__button'
+      staticClass: 'fd-input-group__button'
     }
     return h(FdButton, data, context.children)
   }

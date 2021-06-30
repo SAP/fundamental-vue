@@ -76,7 +76,7 @@ describe('TextInput', () => {
     input.element.value = 'walldorf'
     input.trigger('input')
 
-    const events = wrapper.find(TextInput).emitted('update')
+    const events = wrapper.findComponent(TextInput).emitted('update')
     expect(events).toHaveLength(1)
     expect(events[0]).toEqual(['walldorf'])
   })

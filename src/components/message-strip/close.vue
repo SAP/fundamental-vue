@@ -9,7 +9,9 @@ export default {
       ...context.data,
       class: 'fd-message-strip__close',
       props: {
-        compact: true
+        compact: true,
+        styling: 'transparent',
+        icon: 'decline'
       }
     }
     return h(FdButton, data, context.children)

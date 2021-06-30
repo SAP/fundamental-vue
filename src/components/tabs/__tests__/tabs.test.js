@@ -19,7 +19,7 @@ describe('Tabs', () => {
     )
     await localVue.nextTick()
 
-    const items = wrapper.findAll(TabItem)
+    const items = wrapper.findAllComponents(TabItem)
     const links = wrapper.findAll('a')
 
     links.at(0).trigger('click')

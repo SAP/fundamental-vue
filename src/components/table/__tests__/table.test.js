@@ -82,17 +82,12 @@ describe('Table', () => {
     const wrapper = mount(ChangeColumnWrapper, { localVue })
     await localVue.nextTick()
 
-    const headerCells = wrapper.findAll(FdTableHeaderCell)
+    const headerCells = wrapper.findAllComponents(FdTableHeaderCell)
     expect(headerCells).toHaveLength(2)
     // Now we change the columns
     wrapper.vm.headers = ['c1', 'c2', 'c3', 'c4']
-    // wrapper.vm.headers = ["c1", "c2", "c3", "c4"]
-    // ({
-    //   items: [{ id: "1" }],
-    //   headers:
-    // });
     await localVue.nextTick()
-    expect(wrapper.findAll(FdTableHeaderCell)).toHaveLength(4)
+    expect(wrapper.findAllComponents(FdTableHeaderCell)).toHaveLength(4)
   })
 
   it('ensures single selection', async () => {

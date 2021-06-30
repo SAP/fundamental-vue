@@ -34,7 +34,7 @@ describe('MenuLink', () => {
       }
     })
 
-    const link = wrapper.find(FdMenuLink)
+    const link = wrapper.findComponent(FdMenuLink)
     expect(link.emitted('click')).toBeUndefined()
     wrapper.find('a').trigger('click')
     const clicks = link.emitted('click')

@@ -34,7 +34,7 @@ describe('MenuItem', () => {
     const wrapper = mountMenuItem(`<FdMenuItem>hello</FdMenuItem>`)
     wrapper.find('a').trigger('click')
     await wrapper.vm.$nextTick()
-    const clicks = wrapper.find(FdMenuItem).emitted('click')
+    const clicks = wrapper.findComponent(FdMenuItem).emitted('click')
     expect(clicks).toHaveLength(1)
   })
 

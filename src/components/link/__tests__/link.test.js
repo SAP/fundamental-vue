@@ -58,7 +58,7 @@ describe('Link', () => {
       }
     )
 
-    const routerLink = wrapper.find(RouterLinkStub)
+    const routerLink = wrapper.findComponent(RouterLinkStub)
     expect(routerLink.exists()).toBe(true)
     expect(routerLink.props().to).toEqual({ name: 'home' })
   })
