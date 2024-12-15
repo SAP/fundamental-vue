@@ -1,6 +1,8 @@
 import 'fundamental-styles/dist/fundamental-styles.css'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import '../src/styles.scss'
+// import './SAP-icons.woff'
+import './styles.css'
 import Vue from 'vue'
 import FundamentalVue from '../src/index'
 import VueVirtualScroller from 'vue-virtual-scroller'

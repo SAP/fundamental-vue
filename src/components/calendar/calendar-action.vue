@@ -1,13 +1,6 @@
 <template>
   <div class="fd-calendar__action">
-    <FdButton
-      compact
-      styling="light"
-      :type="type"
-      :state="state"
-      :icon="icon"
-      @click="$emit('click')"
-    >
+    <FdButton compact :styling="styling" :state="state" :icon="icon" @click="$emit('click')">
       {{ title }}
     </FdButton>
   </div>
@@ -15,7 +8,7 @@
 
 <script>
 import FdButton from './../button/button.vue'
-import ButtonTypes from './../button/button-types'
+import ButtonStyles from './../button/styles'
 
 export default {
   name: 'FdCalendarAction',
@@ -24,10 +17,10 @@ export default {
     title: String,
     icon: String,
     disabled: { type: Boolean, default: false },
-    type: {
+    styling: {
       type: String,
       default: null,
-      validator: value => ButtonTypes.indexOf(value) >= 0
+      validator: value => ButtonStyles.indexOf(value) >= 0
     }
   },
   computed: {

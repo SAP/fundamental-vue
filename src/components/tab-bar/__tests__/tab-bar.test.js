@@ -10,11 +10,11 @@ const mountTabBar = async component => {
   const wrapper = mount(component, { localVue })
   await localVue.nextTick()
 
-  const tabBar = wrapper.find(TabBar)
-  const tabBarItems = wrapper.findAll(TabBarItem)
-  const tabBarItem = wrapper.find(TabBarItem)
-  const tabBarLinks = wrapper.findAll(TabBarLink)
-  const tabBarLink = wrapper.find(TabBarLink)
+  const tabBar = wrapper.findComponent(TabBar)
+  const tabBarItems = wrapper.findAllComponents(TabBarItem)
+  const tabBarItem = wrapper.findComponent(TabBarItem)
+  const tabBarLinks = wrapper.findAllComponents(TabBarLink)
+  const tabBarLink = wrapper.findComponent(TabBarLink)
 
   return {
     localVue,

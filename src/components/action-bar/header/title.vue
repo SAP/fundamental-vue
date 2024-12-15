@@ -10,8 +10,8 @@ export default {
     }
   },
   render(h) {
-    const data = { class: 'fd-action-bar__title' }
-    return h(this.tag, data, this.$slots.default)
+    const data = { staticClass: 'fd-action-bar__title' }
+    return h('div', data, this.$slots.default)
   }
 }
 </script>

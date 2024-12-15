@@ -8,13 +8,17 @@ exports[`Split Button renders correctly 1`] = `
   <button
     class="fd-button"
   >
-    Hello World
+    <!---->
+     Hello World
   </button>
    
   <button
     aria-label="More"
     class="fd-button sap-icon--slim-arrow-down fd-button"
-  />
+  >
+    <!---->
+     
+  </button>
 </div>
 `;
 
@@ -27,13 +31,17 @@ exports[`Split Button when disabled renders correctly 1`] = `
     class="fd-button is-disabled"
     disabled="disabled"
   >
-    Hello World
+    <!---->
+     Hello World
   </button>
    
   <button
     aria-label="More"
     class="fd-button sap-icon--slim-arrow-down fd-button is-disabled"
     disabled="disabled"
-  />
+  >
+    <!---->
+     
+  </button>
 </div>
 `;

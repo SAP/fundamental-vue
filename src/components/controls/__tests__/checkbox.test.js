@@ -12,7 +12,7 @@ describe('Checkbox', () => {
     })
     const wrapper = mount(TestComponent, { localVue })
     expect(wrapper.vm.checked).toBe('')
-    const checkbox = wrapper.find(FdCheckbox)
+    const checkbox = wrapper.findComponent(FdCheckbox)
     expect(checkbox.isVisible()).toBe(true)
     checkbox.trigger('click')
     await localVue.nextTick()
@@ -89,7 +89,7 @@ describe('Checkbox', () => {
 //       });
 //       const form = mount(Parent, { localVue });
 //       expect(form.vm.checked).toHaveLength(0);
-//       const checkboxes = form.findAll(FdCheckbox);
+//       const checkboxes = form.findAllComponents(FdCheckbox);
 //       expect(checkboxes).toHaveLength(4);
 //       const expectedValues = [];
 //       expect(form.vm.checked).toEqual([]);

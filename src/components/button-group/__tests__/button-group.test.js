@@ -23,7 +23,7 @@ describe('ButtonGroup', () => {
     })
     const wrapper = mount(Wrapper, { localVue })
     await localVue.nextTick()
-    const buttons = wrapper.findAll(FdButtonGroupButton)
+    const buttons = wrapper.findAllComponents(FdButtonGroupButton)
     for (const buttonWrapper of buttons.wrappers) {
       const button = buttonWrapper.find('button')
       button.trigger('click')
@@ -48,7 +48,7 @@ describe('ButtonGroup', () => {
       },
       { localVue }
     )
-    const buttons = buttonGroup.findAll(FdButtonGroupButton)
+    const buttons = buttonGroup.findAllComponents(FdButtonGroupButton)
     expect(buttons).toHaveLength(3)
     // We have no public api in order to determine whether a button is compact or not.
     // Because of that we have to check if the compact class is present.
@@ -74,8 +74,8 @@ describe('ButtonGroup', () => {
       },
       { localVue }
     )
-    const buttonGroup = buttonGroupWrapper.find(FdButtonGroup)
-    const buttons = buttonGroup.findAll(FdButtonGroupButton)
+    const buttonGroup = buttonGroupWrapper.findComponent(FdButtonGroup)
+    const buttons = buttonGroup.findAllComponents(FdButtonGroupButton)
     expect(buttons).toHaveLength(3)
     // We have no public api in order to determine whether a button is compact or not.
     // Because of that we have to check if the compact class is present.
@@ -107,25 +107,14 @@ describe('ButtonGroup', () => {
       { localVue }
     )
     await localVue.nextTick()
-    const buttonGroup = buttonGroupWrapper.find(FdButtonGroup)
-    const buttons = buttonGroupWrapper.findAll(FdButtonGroupButton)
+    const buttonGroup = buttonGroupWrapper.findComponent(FdButtonGroup)
+    const buttons = buttonGroupWrapper.findAllComponents(FdButtonGroupButton)
     for (const wrapper of buttons.wrappers) {
       const button = wrapper.find('button')
       button.trigger('click')
       await localVue.nextTick()
-      // const buttonValue = buttonGroup.vm.value;
       const value = buttonGroup.vm.value
       expect(typeof value).toBe('string')
-      // const index = value.indexOf(buttonValue);
-      // expect(index).toBeGreaterThan(-1);
     }
-
-    // const buttons = buttonGroup.findAll(FdButtonGroupButton);
-    // expect(buttons).toHaveLength(3);
-    // const buttonWrappers = buttons.wrappers;
-    // for (const buttonWrapper of buttonWrappers) {
-    //   const classes = buttonWrapper.classes();
-    //   expect(classes).not.toContain("fd-button--compact");
-    // }
   })
 })

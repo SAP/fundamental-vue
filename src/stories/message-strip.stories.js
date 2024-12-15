@@ -2,7 +2,7 @@ import storiesFor from '../util/stories-for'
 
 const stories = storiesFor('message-strip')
 
-export default { title: 'message-strip' }
+export default { title: 'Message Strip' }
 
 export const defaultMessageStrip = stories('default')
 export const customized = stories('customized')
