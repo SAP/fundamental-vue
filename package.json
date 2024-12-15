@@ -96,7 +96,7 @@
     "gray-matter": "^4.0.2",
     "html-loader": "^1.1.0",
     "husky": "6.0.0",
-    "loader-utils": "^2.0.0",
+    "loader-utils": "^3.2.1",
     "markdown-it-container": "^2.0.0",
     "postcss": "^7.0.27",
     "prettier": "^1.19.1",
