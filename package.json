@@ -114,7 +114,7 @@
     "saber-markdown": "^0.1.6",
     "sass-loader": "^9.0.2",
     "standard-version": "9.3.0",
-    "start-server-and-test": "^1.10.6",
+    "start-server-and-test": "^2.0.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "validate-element-name": "^2.1.1",
